@@ -53,7 +53,7 @@ echo "#define MAIN_PROCESS_C switch (proc_id){\\" > $OSHOME/src/C_process_main.h
 
 
 echo "#!/bin/sh" > $OSHOME/src/gcc_link.sh
-echo -n "gcc -lrt -lpthread -o outfile" >> $OSHOME/src/gcc_link.sh
+echo -n "gcc -o outfile" >> $OSHOME/src/gcc_link.sh
 i=1
 IFS="
 "
@@ -102,7 +102,7 @@ cd $OSHOME/src
 	rm libworkbench.a
 	make build_ar
 echo "Building executable."
-echo -n " libworkbench.a" >> $OSHOME/src/gcc_link.sh
+echo -n " libworkbench.a -lrt -lpthread" >> $OSHOME/src/gcc_link.sh
 chmod +x $OSHOME/src/gcc_link.sh
 ./gcc_link.sh
 if [ $? != 0 ]

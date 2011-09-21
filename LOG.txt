@@ -1,7 +1,6 @@
-FILESYSTEM INIT.
 Scheduler INIT.
 VirtualMachine INIT.
-PROGRAM LOADING:test/proc/proc_1:1:12:3:
-Scheduler process INIT for:1 file:test/proc/proc_1
-PROGRAM LOADING:test/proc/proc_2:2:12:12:
-Scheduler process INIT for:2 file:test/proc/proc_2
+INSTRUMENTED PROGRAM LOADING: PROC_ID:1
+Scheduler process INIT for:1 file:dummy
+INSTRUMENTED PROGRAM LOADING: PROC_ID:2
+Scheduler process INIT for:2 file:dummy
