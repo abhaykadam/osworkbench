@@ -41,7 +41,7 @@ fi
 
 if [ $exectype != "instrument" ]
 then 
-	echo "Unknown type of execution. vaild: demo/instrumented"
+	echo "Unknown type of execution. vaild: demo/instrument"
 	exit
 fi
 
