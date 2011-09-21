@@ -1,0 +1,2 @@
+create test/proc/proc_1 1 12 3
+create test/proc/proc_2 2 12 12

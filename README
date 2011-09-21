@@ -1,0 +1,38 @@
+Workbench OS:
+	Implemented by Abhirup Ghosh (M.Tech, CSE, IITB)
+
+HOW TO COMPILE AND RUN
+----------------------
+	Run run.sh file with appropriate parameteres.
+	Format -
+		- $>./run.sh <OSSpecfile location> <OSInitile location> <Type of execution: demo/instrumented>
+
+
+DIRECTORY STRUCTURE
+-------------------
+	src- Directory contains source files for the OS along with the Makefile
+	Program Instrumentation - Contains scripts for instrumenting a C program to run in the system
+	test
+		|---proc - Directory contains dummy user programs
+		|---proc_C - Directory contains C source files for using them as processes
+		|---OSSpec and OSInit file - configuration files
+	run.sh - script to compile and run the OS
+
+
+BASIC STRUCTURE OF THE OS
+-------------------
+															  			OSCore
+																				|
+														      -------------
+																	|						|
+																	|						|
+																	|			LoadVirtualMachine
+																	|						|
+																	|				-------------
+															scheduling	|		|		|...|
+																thread		|		|		|		|			
+																	|				|		|		|		|
+																	|				process threads
+																	|				|		|		|		|
+														
+Scheduling thread gains execution periodically.
